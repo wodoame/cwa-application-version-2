@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid stuff</title>
+
+    <style>
+          main{
+            display: grid;
+            grid-template-columns:repeat(auto-fit, minmax(0, 50px)); 
+            outline:2px solid black;
+            justify-content:center;
+            align-items:center;
+            gap:1rem;
+            height:200px; 
+          }
+
+          .item{
+            outline:2px solid cornflowerblue;
+          }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 3</div>
+        <div class="item">item 3</div>
+    </main>
+</body>
+</html>
