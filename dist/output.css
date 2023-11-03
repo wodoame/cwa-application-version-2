@@ -119,6 +119,10 @@
   min-height: 100vh !important
 }
 
+.tw-w-3\/4 {
+  width: 75% !important
+}
+
 .tw-max-w-full {
   max-width: 100% !important
 }
@@ -169,6 +173,16 @@
   background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important
 }
 
+.tw-bg-orange-300 {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(253 186 116 / var(--tw-bg-opacity)) !important
+}
+
+.tw-bg-orange-500 {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(249 115 22 / var(--tw-bg-opacity)) !important
+}
+
 .tw-fill-project-blue {
   fill: #6054cf !important
 }
@@ -207,6 +221,11 @@
 .tw-text-project-blue {
   --tw-text-opacity: 1 !important;
   color: rgb(96 84 207 / var(--tw-text-opacity)) !important
+}
+
+.tw-text-project-green {
+  --tw-text-opacity: 1 !important;
+  color: rgb(86 150 158 / var(--tw-text-opacity)) !important
 }
 
 .tw-underline {
