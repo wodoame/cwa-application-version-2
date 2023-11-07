@@ -346,6 +346,8 @@ const deleteOneSemester = () => {
             user_cwa_data['semestersCount'] = semestersCount; 
             user_cwa_data['sigmas'] = sigmas; 
             user_cwa_data['credit_records'] = credit_records; 
+            user_cwa_data['cwa_records'] = cwa_records; 
+            user_cwa_data['swa_records'] = swa_records;
             user_cwa_data[semester_n] = 'deleted';
             semestersCount > 0 ?  localStorage.setItem('user_cwa_data', JSON.stringify(user_cwa_data)): localStorage.removeItem('user_cwa_data');
             document.getElementById('saved-semesters').innerHTML = semestersCount;
