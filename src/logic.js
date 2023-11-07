@@ -360,7 +360,7 @@ const deleteOneSemester = () => {
          `; 
             activateModal(htmlContent);
             createRecord(user_cwa_data);
-            getGraph(semestersCount);
+            semestersCount > 1 ? getGraph(semestersCount) : document.getElementById('graph').src = './imgs/emptyChart.webp';
         } 
     }
     else{
