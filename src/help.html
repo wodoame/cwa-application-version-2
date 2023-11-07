@@ -15,11 +15,28 @@
      body{
         font-family:'Poppins-light';
      }
+
+     .delete-1{
+      position:relative;
+   }
+
+   .delete-1::after{
+      content:'1'; 
+      position:absolute;
+      top:0;
+      right:-0.3rem;
+      color:#6054cf;
+      font-size:0.9em;
+   }
+
+   a{
+    text-decoration:none; 
+    padding:0.5rem;
+ }
     </style>
 </head>
 <body>
-    <div class="container">
-
+    <div class="container mb-5">
     <div>
         <h3 class="tw-text-center tw-text-project-blue tw-underline tw-underline-offset-8 tw-my-2">Button Uses</h3>
     </div>
@@ -38,7 +55,7 @@
               </h2>
               <div id="refresh" class="accordion-collapse collapse">
                 <div class="accordion-body">
-                  This button clears all inputs and the progress bar
+                  This button clears all inputs and the progress bar. If you want to do some calculations for a new semester use this button to clear all input fields on the screen. Note that your previous data is stored (provided you have saved them) and you can always access them by using the records button
                 </div>
               </div>
             </div>
@@ -56,26 +73,48 @@
               </h2>
               <div id="records" class="accordion-collapse collapse">
                 <div class="accordion-body">
-                  This button allows you to access all your previously calculated semesters. You may want to make some changes and if so then you can use this button to go back and make those changes
+                  This button allows you to access all your previously calculated semesters. Note that you will not be allowed to make changes.
                 </div>
               </div>
             </div>
            
             <div class="accordion-item">
               <h2 class="accordion-header">
-                <button class="accordion-button tw-ring-0 tw-bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#delete" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                <button class="accordion-button tw-ring-0 tw-bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#delete-all" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
                   <div class="tw-border-0 tw-rounded tw-bg-white tw-text-project-blue">
                     <svg xmlns="http://www.w3.org/2000/svg" height="30" width="30"  class="bi bi-trash tw-fill-project-blue" viewBox="0 0 16 16">
                       <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"/>
                       <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"/>
                     </svg>
-                    delete
+                    delete all
                   </div>
                 </button>
               </h2>
-              <div id="delete" class="accordion-collapse collapse">
+              <div id="delete-all" class="accordion-collapse collapse">
                 <div class="accordion-body">
-                  This button helps you to delete your recent semester. 
+                  This button helps you to delete all calculations for all semesters. 
+                </div>
+              </div>
+            </div>
+
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button tw-ring-0 tw-bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#delete-1" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                  <div class="tw-border-0 tw-rounded tw-bg-white tw-text-project-blue">
+                    <span class="delete-1">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="30" width="30"  class="bi bi-trash tw-fill-project-blue" viewBox="0 0 16 16">
+                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"/>
+                        <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"/>
+                      </svg>
+                    </span>
+                    &nbsp; delete one
+                  </div>
+                </button>
+              </h2>
+              <div id="delete-1" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  This button helps you delete your recently saved calculations. 
                 </div>
               </div>
             </div>
@@ -150,6 +189,10 @@
             </div>
 
           </div>
+          
+            <a class="text-center tw-block m-3 tw-text-project-blue" href="./index.html">
+                Back
+            </a>
     </div>
     <script src="../bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
 </body>
