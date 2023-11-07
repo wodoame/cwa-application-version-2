@@ -284,6 +284,15 @@ const createRecord = (data) => {
                 `;
                 document.getElementById(`semester-${i}-records`).insertAdjacentHTML("beforeend", htmlContent); 
             }
+
+            htmlContent = `
+               <div class="tw-flex gap-2 tw-justify-center">
+                   <div class="text-center m-2 tw-text-slate-500 tw-text-sm">CWA: ${data[semester_n].cwa} %</div>
+                   <div class="text-center m-2 tw-text-slate-500 tw-text-sm">SWA: ${data[semester_n].swa} %</div>
+               </div>
+            `
+            document.getElementById(`semester-${i}-records`).insertAdjacentHTML("beforeend", htmlContent); 
+
         // console.log(course_marks, credit_hours, semester_n);
     }
 }; 
