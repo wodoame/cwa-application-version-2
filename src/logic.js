@@ -62,10 +62,10 @@ const addRow = () => {
             <span class="course-number">${rowCount + 1}</span>
         </div>
         <div>
-            <input type="number" max="100" min="0" name="score-field" oninput="check(this)" required class="form-control tw-rounded-sm tw-outline tw-outline-1 tw-outline-slate-300 tw-border-0 focus:tw-outline-project-blue focus:tw-ring-0 focus:tw-outline-2">
+            <input type="number" max="100" min="0" name="score-field" oninput="check(this)" required class="form-control tw-rounded-sm tw-outline tw-outline-1 tw-outline-slate-300 tw-border-0 focus:tw-outline-project-blue focus:tw-ring-0 focus:tw-outline-2" id="input">
         </div>
           <div>
-            <input type="number" max="100" min="0" name="credit-field" oninput="check(this)" required class="form-control tw-rounded-sm tw-outline tw-outline-1 tw-outline-slate-300 tw-border-0 focus:tw-outline-project-blue focus:tw-ring-0 focus:tw-outline-2">
+            <input type="number" max="100" min="0" name="credit-field" oninput="check(this)" required class="form-control tw-rounded-sm tw-outline tw-outline-1 tw-outline-slate-300 tw-border-0 focus:tw-outline-project-blue focus:tw-ring-0 focus:tw-outline-2" id="input">
         </div>
         <button type="button" class="close-button tw-border-0 tw-bg-white tw-p-0" onclick="deleteRow(this)">
             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-x-lg tw-fill-project-blue" viewBox="0 0 16 16">
