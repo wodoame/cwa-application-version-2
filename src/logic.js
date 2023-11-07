@@ -360,6 +360,7 @@ const deleteOneSemester = () => {
          `; 
             activateModal(htmlContent);
             createRecord(user_cwa_data);
+            getGraph(semestersCount);
         } 
     }
     else{
@@ -384,6 +385,7 @@ const deleteAllSemesters = () => {
         credit_records = [];
         cwa_records = []; 
         swa_records = [];
+        document.getElementById('graph').src = './imgs/emptyChart.webp';
     }
     else{
         activateModal('No semester data to delete');
