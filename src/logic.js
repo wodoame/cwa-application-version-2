@@ -228,7 +228,7 @@ function check(r){
 const createRecord = (data) => {
     const recordsDiv = document.getElementById('records-div');
     recordsDiv.innerHTML = ''; 
-    console.log(recordsDiv);
+    // console.log(recordsDiv);
     if(data.semestersCount == 0){
        const  htmlContent = `
              <div class="tw-text-slate-500 text-center">No records yet</div>
@@ -258,7 +258,7 @@ const createRecord = (data) => {
         </div>
         `;
         recordsDiv.insertAdjacentHTML("beforeend", htmlContent)
-        console.log(semester_n);
+        // console.log(semester_n);
         const course_marks = data[semester_n].course_marks; 
         const credit_hours = data[semester_n].credit_hours;
 
@@ -317,7 +317,7 @@ function save(){
         user_cwa_data['swa_records'] = swa_records; 
         user_cwa_data[semester_n] = {'course_marks': current_scores, 'credit_hours': current_credits, 'cwa':cwa, 'swa':swa};
         localStorage.setItem('user_cwa_data', JSON.stringify(user_cwa_data));
-        console.log(user_cwa_data);
+        // console.log(user_cwa_data);
         createRecord(user_cwa_data);
         if(semestersCount > 1){
           getGraph(semestersCount);
@@ -341,6 +341,8 @@ const deleteOneSemester = () => {
             semestersCount--;
             sigmas.pop(); 
             credit_records.pop();
+            cwa_records.pop(); 
+            swa_records.pop();
             user_cwa_data['semestersCount'] = semestersCount; 
             user_cwa_data['sigmas'] = sigmas; 
             user_cwa_data['credit_records'] = credit_records; 
@@ -376,6 +378,10 @@ const deleteAllSemesters = () => {
     `; 
         activateModal(htmlContent);
         createRecord({'semestersCount':0});
+        sigmas = []; 
+        credit_records = [];
+        cwa_records = []; 
+        swa_records = [];
     }
     else{
         activateModal('No semester data to delete');
