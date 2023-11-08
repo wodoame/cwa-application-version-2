@@ -133,6 +133,26 @@
                transform: rotate(360deg);
             }
          }
+    @media (min-width: 768px) {
+      #records-div{
+        display:grid; 
+        grid-template-columns:repeat(2, minmax(0, 1fr)); 
+        gap:0.5rem; 
+        justify-content: center
+      }
+    
+     @media (min-width: 1024px) {
+          #records-div{
+          display:grid; 
+          grid-template-columns:repeat(auto-fit, minmax(0, 25%)); 
+          gap:0.5rem; 
+          justify-content: center;
+         }
+
+    }
+
+        
+    }; 
     </style>
 </head>
 <body>
@@ -283,7 +303,7 @@
                     <div class="tw-p-1 tw-flex tw-justify-center">
                          <button class="tw-border-0 tw-rounded tw-bg-white tw-outline tw-outline-2 tw-outline-project-blue tw-text-project-blue p-2 hover:tw-bg-project-blue hover:tw-text-white hover:tw-outline-0" onclick="calculate()">Calculate</button>
                     </div>
-
+                    
                     <div class="text-center m-3 text-muted small-message">
                         Click 
                          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-info-lg tw-fill-project-blue" viewBox="0 0 16 16">
@@ -294,6 +314,19 @@
                  </div>
             </div>
 
+        </div>
+        
+        <div id="records-section" class="tw-min-h-screen">
+        <div>
+            <h3 class="tw-text-center tw-text-project-blue tw-my-2">Records</h3>
+        </div>
+          <div id="records-div">
+              <div class="tw-text-slate-500 text-center">No records yet</div>
+          </div>
+          
+          <a class="text-center tw-block m-3 tw-text-project-blue" href="#">
+            Back
+        </a>
         </div>
 
         <div class="tw-min-h-screen" id="help-section">
@@ -450,19 +483,6 @@
                     Back
                 </a>
             </div>
-        </div>
-
-        <div id="records-section" class="tw-min-h-screen">
-        <div>
-            <h3 class="tw-text-center tw-text-project-blue tw-my-2">Records</h3>
-        </div>
-          <div class="mx-auto lg:tw-w-3/4" id="records-div">
-              <div class="tw-text-slate-500 text-center">No records yet</div>
-          </div>
-          
-          <a class="text-center tw-block m-3 tw-text-project-blue" href="#">
-            Back
-        </a>
         </div>
 
 <div class="modal fade" id="generalModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
