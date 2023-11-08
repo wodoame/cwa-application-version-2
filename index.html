@@ -133,6 +133,7 @@
                transform: rotate(360deg);
             }
          }
+
     @media (min-width: 768px) {
       #records-div{
         display:grid; 
@@ -140,20 +141,20 @@
         gap:0.5rem; 
         justify-content: center
       }
-    
-     @media (min-width: 1024px) {
-          #records-div{
-          display:grid; 
-          grid-template-columns:repeat(auto-fit, minmax(0, 25%)); 
-          gap:0.5rem; 
-          justify-content: center;
-         }
-
+      
     }
 
-        
-    }; 
-    </style>
+    
+    @media (min-width: 1024px) {
+      #records-div{
+      display:grid; 
+      grid-template-columns:repeat(auto-fit, minmax(0, 25%)); 
+      gap:0.5rem; 
+      justify-content: center;
+     }
+ }
+
+</style>
 </head>
 <body>
     <button class="visually-hidden" data-bs-toggle="modal" data-bs-target="#generalModal" id="saveButton"></button>
