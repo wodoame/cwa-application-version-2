@@ -437,9 +437,9 @@ const prepopulate = () => {
             credit_fields[i].value = credit_hours[i]; 
             check(score_fields[i]);
             check(credit_fields[i]);
-            progress(cwa, 'progress-bar-1', 'cwa-score');
-            progress(swa, 'progress-bar-2', 'swa-score');
         }
+        progress(cwa, 'progress-bar-1', 'cwa-score');
+        progress(swa, 'progress-bar-2', 'swa-score');
          const htmlContent =  `
             History restored
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg tw-fill-project-blue" viewBox="0 0 16 16">
