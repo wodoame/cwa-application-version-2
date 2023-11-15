@@ -338,16 +338,8 @@
   background-color: rgb(96 84 207 / var(--tw-bg-opacity)) !important
 }
 
-.focus\:tw-outline:focus {
-  outline-style: solid !important
-}
-
 .focus\:tw-outline-2:focus {
   outline-width: 2px !important
-}
-
-.focus\:tw-outline-project-blue:focus {
-  outline-color: #6054cf !important
 }
 
 .focus\:tw-outline-green-600:focus {
@@ -356,6 +348,10 @@
 
 .focus\:tw-outline-pink-600:focus {
   outline-color: #db2777 !important
+}
+
+.focus\:tw-outline-project-blue:focus {
+  outline-color: #6054cf !important
 }
 
 .focus\:tw-ring-0:focus {

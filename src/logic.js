@@ -68,11 +68,11 @@ const addRow = () => {
             <input type="number" max="100" min="0" name="credit-field" oninput="check(this)" required class="form-control tw-rounded-sm tw-outline tw-outline-1 tw-outline-slate-300 tw-border-0 focus:tw-outline-project-blue focus:tw-ring-0 focus:tw-outline-2" id="input">
         </div>
         <button type="button" class="close-button tw-border-0 tw-bg-white tw-p-0" onclick="deleteRow(this)">
-            <div>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-x-lg tw-fill-project-blue" viewBox="0 0 16 16">
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="24" height="24" class="bi bi-x-lg tw-fill-project-blue" viewBox="0 0 16 16">
             <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
             </svg>
-            </div>
+        </div>
         </button>
     </div>
         `;
@@ -129,9 +129,11 @@ for (let i = 0; i < n; i++){
             <input type="number" max="100" min="0" name="credit-field" oninput="check(this)" required class="form-control tw-rounded-sm tw-outline tw-outline-1 tw-outline-slate-300 tw-border-0 focus:tw-outline-project-blue focus:tw-ring-0 focus:tw-outline-2" id="input">
         </div>
         <button type="button" class="close-button tw-border-0 tw-bg-white tw-p-0" onclick="deleteRow(this)">
+           <div>
             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="24" height="24" class="bi bi-x-lg tw-fill-project-blue" viewBox="0 0 16 16">
             <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
             </svg>
+           </div>
         </button>
     </div>`;
     inputRowsParent.insertAdjacentHTML("beforeend", htmlContent);
