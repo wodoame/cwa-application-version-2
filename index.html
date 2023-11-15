@@ -85,21 +85,8 @@
             justify-content: center;
             padding:0.25rem;
          }
-         
-         .button-grid svg{
-          width:1.5rem;
-         }
 
-        .input-row svg, .record-row svg{
-          width:1.5rem;
-        }
-
-         #addButton{
-          width:2rem;
-         }
-
-
-
+  
         
 
          .spinner {
@@ -168,12 +155,6 @@
       justify-content: center;
      }
  }
-/*
-
-svg{
- width:100%;
-}
-*/
 
 </style>
 </head>
@@ -198,8 +179,8 @@ svg{
                 </div>
                 <form class="border-bottom" id="input-rows">
                     <div class="input-row">
-                        <button type="button" class="tw-border-0 tw-rounded tw-bg-white tw-group focus:tw-bg-project-blue" onclick="addRow()" id="addButton">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-plus-lg tw-fill-project-blue group-focus:tw-fill-white" viewBox="0 0 16 16">
+                        <button type="button" class="tw-border-0 tw-rounded tw-bg-white tw-group focus:tw-bg-project-blue" onclick="addRow()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi bi-plus-lg tw-fill-project-blue group-focus:tw-fill-white" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
                             </svg>
                         </button>
@@ -216,37 +197,37 @@ svg{
                 <div class="tw-py-2 lg:tw-hidden">
                   <div class="button-grid tw-p-1">
                     <button class="tw-border-0 tw-rounded tw-bg-white tw-group focus:tw-bg-project-blue" onclick="activateWarningModal('Are you sure you want to delete all semsters data ?', 'all-semesters-button', 'one-semester-button')">
-                    <svg xmlns="http://www.w3.org/2000/svg"  class="bi bi-trash tw-fill-project-blue group-focus:tw-fill-white" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"  class="bi bi-trash tw-fill-project-blue group-focus:tw-fill-white" viewBox="0 0 16 16">
                         <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"/>
                         <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"/>
                     </svg>
                     </button>
                     <button class="tw-border-0 tw-rounded delete-1 tw-bg-white tw-group focus:tw-bg-project-blue" onclick="activateWarningModal('Are you sure you want to delete your recent semester data ?', 'one-semester-button', 'all-semesters-button')">
-                    <svg xmlns="http://www.w3.org/2000/svg"  class="bi bi-trash tw-fill-project-blue group-focus:tw-fill-white" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"  class="bi bi-trash tw-fill-project-blue group-focus:tw-fill-white" viewBox="0 0 16 16">
                         <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"/>
                         <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"/>
                     </svg>
                     </button>
                     <a class="tw-border-0 tw-p-1 tw-rounded tw-bg-white tw-group focus:tw-bg-project-blue" href="#help-section">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-info-lg tw-fill-project-blue group-focus:tw-fill-white" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-info-lg tw-fill-project-blue group-focus:tw-fill-white" viewBox="0 0 16 16">
                             <path d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704l1.323-6.208Zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0Z"/>
                          </svg>
                     </a>
                     <button class="tw-border-0 tw-rounded tw-bg-white tw-group focus:tw-bg-project-blue" onclick="clearResults()">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-clockwise tw-fill-project-blue group-focus:tw-fill-white" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi bi-arrow-clockwise tw-fill-project-blue group-focus:tw-fill-white" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z"/>
                             <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z"/>
                         </svg>
                     </button>
 
                     <button class="tw-border-0 tw-rounded tw-bg-white tw-group focus:tw-bg-project-blue" onclick="save()">
-                        <svg xmlns="http://www.w3.org/2000/svg"  class="bi bi-check-lg tw-fill-project-blue group-focus:tw-fill-white" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg"  width="24" height="24" class="bi bi-check-lg tw-fill-project-blue group-focus:tw-fill-white" viewBox="0 0 16 16">
                             <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
                         </svg>
                     </button>
            
                     <a class="tw-border-0 tw-p-1 tw-rounded tw-bg-white tw-group focus:tw-bg-project-blue" href="#records-section">
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-database tw-fill-project-blue group-focus:tw-fill-white" style="width:1.5rem" viewBox="0 0 16 16">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-database tw-fill-project-blue group-focus:tw-fill-white" style="width:1.5rem" viewBox="0 0 16 16">
                             <path d="M4.318 2.687C5.234 2.271 6.536 2 8 2s2.766.27 3.682.687C12.644 3.125 13 3.627 13 4c0 .374-.356.875-1.318 1.313C10.766 5.729 9.464 6 8 6s-2.766-.27-3.682-.687C3.356 4.875 3 4.373 3 4c0-.374.356-.875 1.318-1.313ZM13 5.698V7c0 .374-.356.875-1.318 1.313C10.766 8.729 9.464 9 8 9s-2.766-.27-3.682-.687C3.356 7.875 3 7.373 3 7V5.698c.271.202.58.378.904.525C4.978 6.711 6.427 7 8 7s3.022-.289 4.096-.777A4.92 4.92 0 0 0 13 5.698ZM14 4c0-1.007-.875-1.755-1.904-2.223C11.022 1.289 9.573 1 8 1s-3.022.289-4.096.777C2.875 2.245 2 2.993 2 4v9c0 1.007.875 1.755 1.904 2.223C4.978 15.71 6.427 16 8 16s3.022-.289 4.096-.777C13.125 14.755 14 14.007 14 13V4Zm-1 4.698V10c0 .374-.356.875-1.318 1.313C10.766 11.729 9.464 12 8 12s-2.766-.27-3.682-.687C3.356 10.875 3 10.373 3 10V8.698c.271.202.58.378.904.525C4.978 9.71 6.427 10 8 10s3.022-.289 4.096-.777A4.92 4.92 0 0 0 13 8.698Zm0 3V13c0 .374-.356.875-1.318 1.313C10.766 14.729 9.464 15 8 15s-2.766-.27-3.682-.687C3.356 13.875 3 13.373 3 13v-1.302c.271.202.58.378.904.525C4.978 12.71 6.427 13 8 13s3.022-.289 4.096-.777c.324-.147.633-.323.904-.525Z"/>
                         </svg>
                       </a>
@@ -284,37 +265,37 @@ svg{
                 <div class="tw-py-2 tw-hidden lg:tw-block">
                   <div class="button-grid tw-p-1">
                     <button class="tw-border-0 tw-rounded tw-bg-white tw-group focus:tw-bg-project-blue" onclick="activateWarningModal('Are you sure you want to delete all semsters data ?', 'all-semesters-button', 'one-semester-button')">
-                    <svg xmlns="http://www.w3.org/2000/svg"  class="bi bi-trash tw-fill-project-blue group-focus:tw-fill-white" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"  class="bi bi-trash tw-fill-project-blue group-focus:tw-fill-white" viewBox="0 0 16 16">
                         <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"/>
                         <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"/>
                     </svg>
                     </button>
                     <button class="tw-border-0 tw-rounded delete-1 tw-bg-white tw-group focus:tw-bg-project-blue" onclick="activateWarningModal('Are you sure you want to delete your recent semester data ?', 'one-semester-button', 'all-semesters-button')">
-                    <svg xmlns="http://www.w3.org/2000/svg"  class="bi bi-trash tw-fill-project-blue group-focus:tw-fill-white" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"  class="bi bi-trash tw-fill-project-blue group-focus:tw-fill-white" viewBox="0 0 16 16">
                         <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"/>
                         <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"/>
                     </svg>
                     </button>
                     <a class="tw-border-0 tw-p-1 tw-rounded tw-bg-white tw-group focus:tw-bg-project-blue" href="#help-section">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-info-lg tw-fill-project-blue group-focus:tw-fill-white" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-info-lg tw-fill-project-blue group-focus:tw-fill-white" viewBox="0 0 16 16">
                             <path d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704l1.323-6.208Zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0Z"/>
                          </svg>
                     </a>
                     <button class="tw-border-0 tw-rounded tw-bg-white tw-group focus:tw-bg-project-blue" onclick="clearResults()">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-clockwise tw-fill-project-blue group-focus:tw-fill-white" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi bi-arrow-clockwise tw-fill-project-blue group-focus:tw-fill-white" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z"/>
                             <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z"/>
                         </svg>
                     </button>
 
                     <button class="tw-border-0 tw-rounded tw-bg-white tw-group focus:tw-bg-project-blue" onclick="save()">
-                        <svg xmlns="http://www.w3.org/2000/svg"  class="bi bi-check-lg tw-fill-project-blue group-focus:tw-fill-white" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg"  width="24" height="24" class="bi bi-check-lg tw-fill-project-blue group-focus:tw-fill-white" viewBox="0 0 16 16">
                             <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
                         </svg>
                     </button>
            
                     <a class="tw-border-0 tw-p-1 tw-rounded tw-bg-white tw-group focus:tw-bg-project-blue" href="#records-section">
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-database tw-fill-project-blue group-focus:tw-fill-white" style="width:1.5rem" viewBox="0 0 16 16">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-database tw-fill-project-blue group-focus:tw-fill-white" style="width:1.5rem" viewBox="0 0 16 16">
                             <path d="M4.318 2.687C5.234 2.271 6.536 2 8 2s2.766.27 3.682.687C12.644 3.125 13 3.627 13 4c0 .374-.356.875-1.318 1.313C10.766 5.729 9.464 6 8 6s-2.766-.27-3.682-.687C3.356 4.875 3 4.373 3 4c0-.374.356-.875 1.318-1.313ZM13 5.698V7c0 .374-.356.875-1.318 1.313C10.766 8.729 9.464 9 8 9s-2.766-.27-3.682-.687C3.356 7.875 3 7.373 3 7V5.698c.271.202.58.378.904.525C4.978 6.711 6.427 7 8 7s3.022-.289 4.096-.777A4.92 4.92 0 0 0 13 5.698ZM14 4c0-1.007-.875-1.755-1.904-2.223C11.022 1.289 9.573 1 8 1s-3.022.289-4.096.777C2.875 2.245 2 2.993 2 4v9c0 1.007.875 1.755 1.904 2.223C4.978 15.71 6.427 16 8 16s3.022-.289 4.096-.777C13.125 14.755 14 14.007 14 13V4Zm-1 4.698V10c0 .374-.356.875-1.318 1.313C10.766 11.729 9.464 12 8 12s-2.766-.27-3.682-.687C3.356 10.875 3 10.373 3 10V8.698c.271.202.58.378.904.525C4.978 9.71 6.427 10 8 10s3.022-.289 4.096-.777A4.92 4.92 0 0 0 13 8.698Zm0 3V13c0 .374-.356.875-1.318 1.313C10.766 14.729 9.464 15 8 15s-2.766-.27-3.682-.687C3.356 13.875 3 13.373 3 13v-1.302c.271.202.58.378.904.525C4.978 12.71 6.427 13 8 13s3.022-.289 4.096-.777c.324-.147.633-.323.904-.525Z"/>
                         </svg>
                       </a>
@@ -359,7 +340,7 @@ svg{
                       <h2 class="accordion-header">
                         <button class="accordion-button collapsed tw-ring-0 tw-bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#refresh" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
                           <div class="tw-border-0 tw-rounded tw-bg-white tw-text-project-blue">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" class="bi bi-arrow-clockwise tw-fill-project-blue" viewBox="0 0 16 16">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" class="bi bi-arrow-clockwise tw-fill-project-blue" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z"/>
                                 <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z"/>
                             </svg>
@@ -377,7 +358,7 @@ svg{
                       <h2 class="accordion-header">
                         <button class="accordion-button collapsed tw-ring-0 tw-bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#records" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
                           <div class="tw-border-0 tw-rounded tw-bg-white tw-text-project-blue">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" fill="currentColor" class="bi bi-database tw-fill-project-blue" viewBox="0 0 16 16">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="25" width="25" fill="currentColor" class="bi bi-database tw-fill-project-blue" viewBox="0 0 16 16">
                               <path d="M4.318 2.687C5.234 2.271 6.536 2 8 2s2.766.27 3.682.687C12.644 3.125 13 3.627 13 4c0 .374-.356.875-1.318 1.313C10.766 5.729 9.464 6 8 6s-2.766-.27-3.682-.687C3.356 4.875 3 4.373 3 4c0-.374.356-.875 1.318-1.313ZM13 5.698V7c0 .374-.356.875-1.318 1.313C10.766 8.729 9.464 9 8 9s-2.766-.27-3.682-.687C3.356 7.875 3 7.373 3 7V5.698c.271.202.58.378.904.525C4.978 6.711 6.427 7 8 7s3.022-.289 4.096-.777A4.92 4.92 0 0 0 13 5.698ZM14 4c0-1.007-.875-1.755-1.904-2.223C11.022 1.289 9.573 1 8 1s-3.022.289-4.096.777C2.875 2.245 2 2.993 2 4v9c0 1.007.875 1.755 1.904 2.223C4.978 15.71 6.427 16 8 16s3.022-.289 4.096-.777C13.125 14.755 14 14.007 14 13V4Zm-1 4.698V10c0 .374-.356.875-1.318 1.313C10.766 11.729 9.464 12 8 12s-2.766-.27-3.682-.687C3.356 10.875 3 10.373 3 10V8.698c.271.202.58.378.904.525C4.978 9.71 6.427 10 8 10s3.022-.289 4.096-.777A4.92 4.92 0 0 0 13 8.698Zm0 3V13c0 .374-.356.875-1.318 1.313C10.766 14.729 9.464 15 8 15s-2.766-.27-3.682-.687C3.356 13.875 3 13.373 3 13v-1.302c.271.202.58.378.904.525C4.978 12.71 6.427 13 8 13s3.022-.289 4.096-.777c.324-.147.633-.323.904-.525Z"/>
                             </svg>
                             records
@@ -395,7 +376,7 @@ svg{
                       <h2 class="accordion-header">
                         <button class="accordion-button collapsed tw-ring-0 tw-bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#delete-all" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
                           <div class="tw-border-0 tw-rounded tw-bg-white tw-text-project-blue">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="30" width="30"  class="bi bi-trash tw-fill-project-blue" viewBox="0 0 16 16">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="25" width="25"  class="bi bi-trash tw-fill-project-blue" viewBox="0 0 16 16">
                               <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"/>
                               <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"/>
                             </svg>
@@ -414,7 +395,7 @@ svg{
                         <button class="accordion-button collapsed tw-ring-0 tw-bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#delete-1" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
                           <div class="tw-border-0 tw-rounded tw-bg-white tw-text-project-blue">
                             <span class="delete-1">
-                              <svg xmlns="http://www.w3.org/2000/svg" height="30" width="30"  class="bi bi-trash tw-fill-project-blue" viewBox="0 0 16 16">
+                              <svg xmlns="http://www.w3.org/2000/svg" height="25" width="25"  class="bi bi-trash tw-fill-project-blue" viewBox="0 0 16 16">
                                 <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"/>
                                 <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"/>
                               </svg>
@@ -433,7 +414,7 @@ svg{
                       <h2 class="accordion-header">
                         <button class="accordion-button collapsed tw-ring-0 tw-bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#save" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
                           <div class="tw-border-0 tw-rounded tw-bg-white tw-text-project-blue">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"  class="bi bi-check-lg tw-fill-project-blue" viewBox="0 0 16 16">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"  class="bi bi-check-lg tw-fill-project-blue" viewBox="0 0 16 16">
                               <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
                           </svg>
                             Save
@@ -450,7 +431,7 @@ svg{
                       <h2 class="accordion-header">
                         <button class="accordion-button collapsed tw-ring-0 tw-bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#add" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
                           <div class="tw-border-0 tw-rounded tw-bg-white tw-text-project-blue">
-                          <svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" class="bi bi-plus-lg tw-fill-project-blue" viewBox="0 0 16 16">
+                          <svg xmlns="http://www.w3.org/2000/svg" height="25" width="25" class="bi bi-plus-lg tw-fill-project-blue" viewBox="0 0 16 16">
                               <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
                             </svg>
                             Add
@@ -467,7 +448,7 @@ svg{
                       <h2 class="accordion-header">
                         <button class="accordion-button collapsed tw-ring-0 tw-bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#remove-row" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
                           <div class="tw-border-0 tw-rounded tw-bg-white tw-text-project-blue">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="30" width="30" class="bi bi-x-lg tw-fill-project-blue" viewBox="0 0 16 16">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="25" width="25" class="bi bi-x-lg tw-fill-project-blue" viewBox="0 0 16 16">
                               <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
                             </svg>
                             remove row
@@ -484,7 +465,7 @@ svg{
                       <h2 class="accordion-header">
                         <button class="accordion-button collapsed tw-ring-0 tw-bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#help" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
                           <div class="tw-border-0 tw-rounded tw-bg-white tw-text-project-blue">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="30" width="30" class="bi bi-info-lg tw-fill-project-blue" viewBox="0 0 16 16">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="25" width="25" class="bi bi-info-lg tw-fill-project-blue" viewBox="0 0 16 16">
                               <path d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704l1.323-6.208Zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0Z"/>
                            </svg>
                             Help
